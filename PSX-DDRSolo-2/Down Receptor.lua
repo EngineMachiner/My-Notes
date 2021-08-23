@@ -9,6 +9,7 @@ t[#t+1] = Def.Sprite {
 		self.p = self:GetParent()
 		self.p:stoptweening():zoom(1.875)
 		self.p:diffuse(color("0.75,0.75,0.75,1"))
+		self.Zoom = self.p:GetZoom()
 		self:effectclock("beat")
 		self:set_tween_uses_effect_delta(true)
 		self:SetTextureFiltering(false)
@@ -18,27 +19,36 @@ t[#t+1] = Def.Sprite {
 	AnimateCommand=function(self)
 		self.p:diffuse(color("1,1,1,1"))
 		self.p:zoom(2)
+		self.Zoom = self.p:GetZoom()
 		self:animate(true)
 		self:SetStateProperties( {
 			{ Frame=0, Delay=0.25 },
 			{ Frame=1, Delay=0.75 }
 		} )
 	end,
-	ZoominCommand=function(self)
-		self.p:stoptweening()
-		self.p:zoom( 2 * 0.75 ):linear(0.12)
-		self.p:zoom( 2 )
+	PressCommand=function(self)
+		if not self.Lock then
+			self.p:stoptweening()
+			self.p:zoom( self.Zoom * 0.75 )
+			self.p:linear(0.12)
+			self.p:zoom( self.Zoom )
+		end
+	end,
+	NoneCommand=function(self)
+		self.Lock = false
 	end
 }
 
 for i=1,5 do
 	t[#t]["W"..tostring(i).."Command"]=function(self)
 		if i < 4 then
+			self.Lock = true
 			self.p:stoptweening()
-			self.p:linear(0.12):zoom(2)
+			self.p:linear(0.12):zoom(self.Zoom)
 		else
+			self.Lock = false
 			self.p:stoptweening()
-			self.p:sleep(0.05):queuecommand("Zoomin")
+			self.p:sleep(0.05):queuecommand("Press")
 		end
 	end
 end
