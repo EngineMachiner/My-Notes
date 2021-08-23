@@ -1,5 +1,5 @@
-# PSX-DDR-NS
- DDR PSX era NoteSkins
+# My-NS
+This repo stores noteskins created by me.
 
-This is my version of the PSX DDR NoteSkins.
+PSX DDR:
 I took some outfox-note graphics (so credits to it).
