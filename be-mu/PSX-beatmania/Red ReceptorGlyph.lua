@@ -1,0 +1,1 @@
+return Def.Sprite{ Texture = "_Scratch (res 56x56).png" }
