@@ -303,6 +303,8 @@ end
 -- Notefield
 t[#t+1] = Def.ActorFrame{
 
+	'ToReplace',
+
 	-- redLight
 	Def.Quad{
 		InitCommand=function(self)
@@ -328,9 +330,7 @@ t[#t+1] = Def.ActorFrame{
 
 	-- redGrid
 	Def.Quad{
-		InitCommand=function(self)
-			quadsSize(self)
-		end
+		InitCommand=function(self) quadsSize(self) end
 	},
 
 	Def.ActorFrame{
@@ -338,6 +338,28 @@ t[#t+1] = Def.ActorFrame{
 		key,	triggeredKey
 	}
 
+}
+
+local newT = t[#t]
+-- Vertical Grid
+newT[1] = Def.Quad{
+	InitCommand=function(self)
+
+		quadsSize(self)
+		self:setsize( self:GetZoomedWidth(), SCREEN_HEIGHT * 0.75 )
+
+		local crop = 0.9
+		if Button == 'scratch' then crop = 0.95 end
+		self:y( - self:GetZoomedHeight() * 0.5 - distance )
+		self:fadetop(0):cropleft(crop):x( self:GetX() - 2 )
+		self:diffuse(color('#606060')):diffusealpha(0.5)
+
+		if lastKey == '7' and columnN == 0 then self:x( self:GetX() + 9 ) end
+
+		if lastKey == '7' and columnN == 7 or columnN == 15 
+		or lastKey == '5' and Button == 'scratch' then self:visible(false) end
+
+	end
 }
 
 return Def.ActorFrame{ t }
