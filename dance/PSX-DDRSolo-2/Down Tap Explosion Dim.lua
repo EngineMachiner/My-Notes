@@ -63,7 +63,7 @@ for i=1,3 do
 	t[i].RollOffCommand=t[i].HoldingOffCommand
 
 	if i == 3 then
-		t[i].Texture = tex .. ' 60x8.png'
+		t[i].Texture = tex .. ' 30x16.png'
 		t[i].Frames = Sprite.LinearFrames( 60, 1 )
 	end
 
