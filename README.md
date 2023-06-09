@@ -11,7 +11,7 @@ They are supported on OutFox and StepMania 5+.
 
 1. Pick the branch in the repository for the gamemode you like.
 2. Fork / Download it.
-3. Copy it into your game's noteskins gamemode folder.
+3. Copy the noteskins / judgements to the right game folder.
 
 ## Credits
 
