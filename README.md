@@ -2,7 +2,7 @@
 
 # My-Notes
 
-This repository stores noteskins created by me.
+This repository contains noteskins created by me.
 They are supported on OutFox and StepMania 5+
 
 ## Credits
