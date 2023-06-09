@@ -2,14 +2,18 @@
 
 # My-Notes
 
-This repository stores noteskins created by me.
-They are supported on OutFox and StepMania 5+
+This repository contains noteskins created by me.
+It can also include Judgements.
+
+They are supported on OutFox and StepMania 5+.
+
+## How to use
+
+1. Pick the branch in the repository for the gamemode you like.
+2. Fork / Download and copy the noteskins / judgements to the right game folder.
 
 ## Credits
 
-Thanks to the Project OutFox Community Discord devs for helping me on some questions and to...
+- Project OutFox developers.
 - R.O.B.-Bot
 - PCBoyGames
-
-### PSX DDR:
-* I took some outfox-note graphics (so credits to it).
