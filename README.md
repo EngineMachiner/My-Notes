@@ -3,6 +3,8 @@
 # My-Notes
 
 This repository contains noteskins created by me.
+It can also include Judgements.
+
 They are supported on OutFox and StepMania 5+.
 
 ## How to use
