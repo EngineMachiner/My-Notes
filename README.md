@@ -17,3 +17,4 @@ They are supported on OutFox and StepMania 5+.
 - Project OutFox developers.
 - R.O.B.-Bot
 - PCBoyGames
+- hanubeki
