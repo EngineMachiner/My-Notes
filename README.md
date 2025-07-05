@@ -2,14 +2,15 @@
 
 # My-Notes
 
-This repository contains my created noteskins. Each branch is exclusive to a game mode.
+This repository contains my inspired noteskins. Each branch is exclusive to a game mode.
+Some of them contain judgements.
 
-They are supported on OutFox and StepMania 5+.
+They are supported on OutFox and StepMania 5+ depending on the game mode support.
 
 ## Installation
 
   1. Clone the repository or the game mode branch.
-  2. Copy the noteskins in your game's noteskins folder.
+  2. Copy the noteskins and judgements in their respective folders.
 
 ## Credits
 
