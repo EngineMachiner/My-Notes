@@ -1,1 +1,0 @@
-return loadfile( NOTESKIN:GetPath( "Down", "Receptor" ) )( "notefield-s 2x1" )
