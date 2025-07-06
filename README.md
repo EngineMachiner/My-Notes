@@ -9,8 +9,9 @@ They are supported on OutFox and StepMania 5+ depending on the game mode support
 
 ## Installation
 
-  1. Clone the repository or the game mode branch.
-  2. Copy the noteskins and judgements in their respective folders.
+  1. Clone the repository.
+  2. Checkout a game mode branch.
+  3. Copy the noteskins and judgements in their respective folders.
 
 ## Credits
 
