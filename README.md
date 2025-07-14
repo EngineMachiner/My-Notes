@@ -13,7 +13,7 @@ They are supported on OutFox and StepMania 5+ depending on the game mode support
 
   1. Run the next commands in the game directory:
   ```console
-  curl -o setup.sh https://raw.githubusercontent.com/EngineMachiner/My-Notes/refs/heads/main/My-Notes.sh
+  curl -o setup.sh https://raw.githubusercontent.com/EngineMachiner/My-Notes/refs/heads/main/setup.sh
   ./setup.sh; rm setup.sh
 
   ```
